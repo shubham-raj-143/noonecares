@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Digital Cricket</title>
+    <link rel="icon" href="/cool/main/images/cricket.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="/cool/main/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="icon"><img src="/cool/main/images/icon.png" alt="icon"></div>
+
+    <div id="game-pg">
+        <div class="main-div">
+            <div class="lines lines-one"></div>
+            <div class="lines lines-two"></div>
+            <div class="lines lines-three"></div>
+            <div class="lines lines-four"></div>
+
+            <p class="items items-six">6</p>
+            <p class="items items-four">4</p>
+            <p class="items items-three">3</p>
+            <p class="items items-two">2</p>
+            <p class="items items-one">1</p>
+            <p class="items items-wicket1">W</p>
+            <p class="items items-wicket2">W</p>
+            <p class="items items-wicket3">W</p>
+
+
+            <div class="sub-div">
+                <i class="fas fa-arrow-circle-right" id="wheel"></i>
+            </div>
+        </div>
+        <button class="button" type="submit" onclick="rotate()">Play</button>
+        <div class="main-display">
+            <div class="turn-message">
+                <h5 id="turn-message">------------</h5>
+            </div>
+            <div class="scores">
+                <p class="scores-para players-name" id="p1-name">-----</p>
+                <p class="scores-para" id="runs-p1">Run:0</p>
+                <p class="scores-para" id="wickets-p1">Wicket:0</p>
+            </div>
+            <div class="scores">
+                <p class="scores-para players-name" id="p2-name">-----</p>
+                <p class="scores-para" id="runs-p2">Run:0</p>
+                <p class="scores-para" id="wickets-p2">Wicket:0</p>
+            </div>
+            <div class="dis-message" id="">
+                <h4 id="dis-message">Tap Play button</h4>
+                <div id="xtra-msg"></div>
+            </div>
+        </div>
+        <button class="button reset" type="submit" onclick="reset()">Start New Game</button>
+    </div>
+
+
+    <div id="first-pg">
+        <div class="font-pg">
+            <h2 class="font-pg-items font-pg-heading">CrickLuck</h2>
+            <p class="font-pg-items font-pg-p">Test your luck through cricket</p>
+        </div>
+        <div class="all-input">
+            <input class="input" type="text" name="" id="nameP1" value="" placeholder="Player 1 name" />
+            <input class="input" type="text" name="" id="nameP2" value="" placeholder="Player 2 name" />
+        </div>
+        <button class="button" type="submit" onclick="start()">Start</button>
+        <div class="ul-li">
+            <ul>
+                <li>This is a cricket for NOOBS</li>
+                <li>Rules are like Python </li>
+                <li>Rules are very simple.</li>
+                <li>You can play while you have wicket.At the beginning of the game you will get ten wickets.</li>
+                <li>If you lost all wickets,your opposite can play while he/she cross your run or he/she also lose all
+                    wicket.</li>
+                <li>If you cross opposite's run and opposite's has no wicket you will be winner. It's same to your
+                    opposite too.This is how winner will be decided.</li>
+                <li>If you want to set names again,just refresh the page.</li>
+            </ul>
+        </div>
+
+
+    </div>
+    <script src="/cool/main/js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

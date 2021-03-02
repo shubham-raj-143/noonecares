@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+#icon img:hover{
+    cursor: pointer;
+    position: fixed;
+    width: 70px;
+    margin-top: 2%;
+    margin-left: 2%;
+    animation: icon_h 1s ease-in-out;
+}
+@keyframes icon_h{
+    from{width: 60px;}
+    to{width: 70px;}
+}
+#icon img{
+    cursor: pointer;
+    position: fixed;
+    width: 60px;
+    margin-top: 2%;
+    margin-left: 2%;
+    animation: icon 5.2s ease-in-out infinite;
+    
+}
+@keyframes icon{
+    0%{opacity: 0.2;}
+    25%{opacity: 0.7;}
+    50%{opacity: 1;}
+    75%{opacity: 0.7;}
+    100%{opacity: 0.2;}
+}
+
+
+#game-pg{
+    display: none;
+}
+#first-pg{
+    display: block;
+}
+
+.main-div{
+    height: 260px;
+    width: 260px;
+    background: #7869eb;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 50px;
+    position: relative;
+    z-index: -2;
+    border: 5px solid #a29bfe;
+    box-shadow: 0 0 15px #636363;
+}
+.sub-div {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #a29bfe;
+    margin:auto;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+.sub-div i{
+    font-size: 120px;
+    color: #6c5ce7;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: 3s;
+    z-index: 2;
+    
+}
+.button{
+    height: 40px;
+    width: 150px;
+    font-size: 25px;
+    color: #4530eb;
+    background: #eaeaeaaa;
+    outline: none;
+    display: block;
+    margin:0 auto;
+    font-weight: 900;
+    border: 3px solid #341ed8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #383838;
+}
+.button:active {
+    background: #a29bfe;
+}
+.button:hover{
+    background: #636363;
+}
+.lines{
+    position: absolute;
+    display: inline-block;
+    height: 250px;
+    width: 0;
+    border: 2px solid #a29bfe;
+    z-index: -1;
+    background: #a29bfe;
+}
+.lines-one{
+    left: 50%;
+    top: 0;
+}
+.lines-two{
+    left: 49.25%;
+    top: 0;
+    transform: rotate(90deg);
+}
+.lines-three{
+    right: 49.25%;
+    top: 0;
+    transform: rotate(45deg);
+}
+.lines-four{
+    left: 49.25%;
+    top: 0;
+    transform: rotate(315deg);
+}
+.items{
+    position: absolute;
+    display: inline-block;
+    font-size: 40px;
+    color: #a29bfe;
+    font-weight: 900;
+    font-family: Monospace;
+}
+.items-six{
+    top: 13px;
+    left: 60%;
+}
+.items-wicket1{
+    top: 68px;
+    left: 81%;
+}
+.items-wicket2{
+    top: 10px;
+    left: 30%;
+}
+.items-four{
+    top: 68px;
+    left: 7%;
+}
+.items-one{
+    top: 57%;
+    left: 8%;
+}
+.items-wicket3{
+    bottom: 10px;
+    left: 30%;
+}
+.items-two{
+    bottom: 10px;
+    left: 60%;
+}
+.items-three{
+    left: 81%;
+    bottom: 63px;
+}
+.main-display{
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    background: #bce5ef;
+    border-radius: 10px;
+    padding: 5px 5px 0;
+    border: 2px solid #6c5ce7;
+    font-family: Monospace;
+    text-align: center;
+    clear: both;
+}
+.scores{
+    float: left;
+    width: 46%;
+    margin: 2%;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+.scores-para{
+    font-size: 16px;
+    margin: 0 ;
+    padding: 2px;
+}
+.players-name{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.turn-message{
+    margin: 3px auto;
+}
+.dis-message{
+    margin: 100px 0 5px;
+    padding: 5px 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+#xtra-msg{
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-family: serif;
+}
+.reset{
+    display: block;
+    width: 75%;
+    margin: 10px auto;
+    background: #6c5ce7;
+    color: #eaeaeaaa;
+}
+.reset:active{
+    color: #6c5ce7;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+    font-family: Monospace;
+    font-size: 13px;
+}
+
+.all-input{
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+}
+.all-input input{
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px solid #6c5ce7;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #6c5ce7;
+    font-weight: 900;
+    font-family: Monospace;
+    box-shadow: 0 0 15px #636363;
+}
+.font-pg{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: rgb(251, 169, 169);
+    font-family: Courier New;
+}
+.font-pg:hover{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: rgb(255, 30, 30);
+    font-family: Courier New;
+}
+.font-pg-heading{
+    font-size: 35px;
+}
+.ul-li{
+    margin: 10px 20px;
+    font-size: 14px;
+    color: rgb(205, 222, 248);
+    text-align: justify;
+}
+.ul-li ul{
+    padding: 5px;
+    list-style-type: square;
+}
+.ul-li ul li{
+    margin: 5px 0;
+}
